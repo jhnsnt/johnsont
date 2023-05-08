@@ -310,6 +310,14 @@ h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
+  
+  .portfolio #portfolio-flters {
+    padding: 2px 5px !important;
+  }
+
+  .portfolio #portfolio-flters li{
+    padding: 8px 10px 2px 10px !important;
+  }
 }
 
 /*--------------------------------------------------------------
