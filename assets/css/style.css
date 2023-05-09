@@ -12,6 +12,7 @@
 body {
   font-family: 'Poppins', sans-serif;;
   color: #272829;
+  overflow-x: hidden;
 }
 
 a {
@@ -293,11 +294,40 @@ h6 {
   border-bottom: 3px solid #1385d3;
 }
 
+.skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+}
+
+.skill-icon img {
+  width: 60px;
+  /* filter: grayscale(100%); */
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.skill-icon img:hover {
+  filter: unset;
+  transform: scale(1.1);
+} 
+/* .skill-icon {
+  width: 100%;
+  align-items: center;
+  display: flex;
+} */
+
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
 }
+
 
 @media (max-width: 768px) {
   #hero h1 {
@@ -310,7 +340,7 @@ h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
-  
+
   .portfolio #portfolio-flters {
     padding: 2px 5px !important;
   }
@@ -552,7 +582,6 @@ section {
 }
 
 .portfolio #portfolio-flters {
-  padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
