@@ -215,7 +215,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #1385d3;
+  /* background-color: #1385d3; */
   color: #fff;
   width: 40px;
   height: 40px;
