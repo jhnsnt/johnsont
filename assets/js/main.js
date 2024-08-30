@@ -260,3 +260,20 @@
   new PureCounter();
 
 })()
+
+
+function calculateAge(birthDate) {
+  var today = new Date();
+  var birthDate = new Date(birthDate);
+  var age = today.getFullYear() - birthDate.getFullYear();
+  var monthDiff = today.getMonth() - birthDate.getMonth();
+  
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+  }
+  return age;
+}
+
+var birthDate = "1994-03-21";
+var age = calculateAge(birthDate);
+document.getElementById("ageOutput").textContent = age;
